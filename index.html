@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Offre Microsoft Fabric & Power BI — PME/ETI Nouvelle-Aquitaine</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Les indicateurs essentiels de l'écosystème Microsoft Fabric & Power BI pour les PME/ETI françaises, avec un focus viticole et agri-food en Nouvelle-Aquitaine.">
+  <link rel="icon" href="data:,">
+  <style>
+    :root {
+      --primary: #0A66C2;
+      --primary-light: #e5f1fb;
+      --bg: #f7f9fc;
+      --text: #1f2933;
+      --muted: #6b7280;
+      --radius: 12px;
+      --shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top left, #e0f2ff 0, #f7f9fc 45%, #ffffff 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+
+    header {
+      padding-top: 1.5rem;
+      padding-bottom: 0.5rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.2rem 0.75rem;
+      border-radius: 999px;
+      background: rgba(10, 102, 194, 0.08);
+      color: var(--primary);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.2fr);
+      gap: 2.5rem;
+      align-items: center;
+      margin-top: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.9rem, 3vw, 2.4rem);
+      line-height: 1.2;
+      margin: 0 0 1rem;
+    }
+
+    .hero p.lead {
+      margin: 0 0 1rem;
+      font-size: 0.98rem;
+      color: var(--muted);
+    }
+
+    .hero-highlights {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+    }
+
+    .hero-highlight {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .hero-highlight strong {
+      color: var(--primary);
+    }
+
+    .hero-card {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 1.5rem 1.25rem;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(15, 23, 42, 0.06);
+    }
+
+    .hero-card-title {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+
+    .hero-metric {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .hero-metric span {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--muted);
+      margin-left: 0.3rem;
+    }
+
+    .hero-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.75rem;
+    }
+
+    .pill {
+      font-size: 0.78rem;
+      padding: 0.25rem 0.65rem;
+      border-radius: 999px;
+      background: var(--primary-light);
+      color: var(--primary);
+    }
+
+    .section {
+      margin-bottom: 2.5rem;
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .section-title {
+      font-size: 1.15rem;
+      font-weight: 650;
+    }
+
+    .section-kicker {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.4rem;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: var(--radius);
+      padding: 1.1rem 1rem;
+      border: 1px solid rgba(15, 23, 42, 0.06);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 0.55rem;
+      font-size: 0.98rem;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.7rem;
+    }
+
+    .tag {
+      font-size: 0.78rem;
+      padding: 0.15rem 0.55rem;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      color: #4b5563;
+    }
+
+    .cta {
+      padding: 1.5rem 1.25rem;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #0A66C2, #1d4ed8);
+      color: #eef5ff;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .cta-title {
+      font-size: 1.05rem;
+      font-weight: 650;
+    }
+
+    .cta p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    .cta-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 0.25rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      padding: 0.45rem 0.9rem;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: #ffffff;
+      color: #0A66C2;
+    }
+
+    .btn-ghost {
+      background: transparent;
+      color: #e5edff;
+      border: 1px solid rgba(226, 232, 240, 0.4);
+    }
+
+    footer {
+      border-top: 1px solid rgba(148, 163, 184, 0.4);
+      padding: 1.25rem 0 2rem;
+      margin-top: auto;
+    }
+
+    .footer-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    @media (max-width: 1024px) {
+      .container {
+        padding: 1.25rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .cta {
+        padding: 1.25rem 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 1rem 0.85rem;
+      }
+
+      .hero {
+        margin-bottom: 2rem;
+      }
+
+      .hero-card {
+        padding: 1.2rem 1rem;
+      }
+
+      .section {
+        margin-bottom: 2rem;
+      }
+
+      .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .footer-meta {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="container">
+      <header>
+        <span class="badge">Offre 2026 • PME / ETI</span>
+      </header>
+
+      <section class="hero">
+        <div>
+          <h1>Les indicateurs essentiels de l'écosystème Microsoft Fabric & Business Intelligence en 2026</h1>
+          <p class="lead">
+            En 2026, Microsoft Fabric et Power BI deviennent le socle des PME/ETI françaises
+            qui veulent piloter leurs marges et leurs flux en temps réel, sans usine à gaz.
+          </p>
+          <div class="hero-highlights">
+            <div class="hero-highlight">
+              <strong>Viticole & Agri-food :</strong>
+              Nouvelle-Aquitaine, coopératives, maisons de vins et PME agroalimentaires.
+            </div>
+            <div class="hero-highlight">
+              <strong>Ciblage décideurs :</strong>
+              DG, DAF, DSI, directions commerciales et industrielles.
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <p class="hero-card-title">Snapshot marché 2026</p>
+          <div class="hero-metric">
+            +60% <span>croissance annuelle Fabric</span>
+          </div>
+          <div class="hero-pills">
+            <span class="pill">2 Md€ revenus récurrents Fabric</span>
+            <span class="pill">15 % adoption PME françaises</span>
+            <span class="pill">Copilot & IA générative intégrée</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker">Synthèse exécutive</div>
+            <h2 class="section-title">Pourquoi Fabric devient stratégique pour les PME/ETI</h2>
+          </div>
+        </div>
+        <div class="card">
+          <p>
+            En 2026, Microsoft Fabric s'impose comme la plateforme de données unifiée de référence,
+            atteignant près de 2&nbsp;milliards d'euros de revenus récurrents annuels avec une croissance
+            de 60&nbsp;% d'une année sur l'autre. Si les grands comptes français l'adoptent massivement,
+            les PME accusent encore un retard significatif, souvent freiné par une perception de complexité
+            technique.
+          </p>
+          <p>
+            Pourtant, avec des licences d'entrée de gamme accessibles (Fabric F2) et l'intégration de
+            l'IA générative via Copilot, Fabric représente une opportunité inédite pour démocratiser
+            l'accès aux données des PME.
+          </p>
+          <p>
+            Les secteurs viticole et agroalimentaire en Nouvelle-Aquitaine font face à des défis majeurs :
+            volatilité des coûts, exigences de traçabilité et besoin de pilotage en temps réel. Les ERP métiers
+            centralisent l'information, mais leurs capacités analytiques restent limitées. L'enjeu est d'extraire
+            ces données vers une architecture moderne pour en faire un avantage concurrentiel.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker">Offres packagées</div>
+            <h2 class="section-title">4 leviers concrets pour lancer Fabric & Power BI</h2>
+          </div>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Audit & feuille de route Fabric</h3>
+            <p>
+              Cartographie de l'existant (Excel, rapports Power BI isolés, SQL Server),
+              analyse FinOps et feuille de route de migration vers OneLake pour une
+              coopérative viticole ou un grand domaine.
+            </p>
+            <div class="tag-row">
+              <span class="tag">2–3 jours</span>
+              <span class="tag">DG / DAF</span>
+              <span class="tag">Coopératives & domaines</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Portail de pilotage commercial</h3>
+            <p>
+              Déploiement d'un modèle de données connecté à l'ERP viticole avec
+              3 tableaux de bord Power BI : Vue Executive, Analyse des ventes,
+              Suivi des marges à l'export.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Power BI</span>
+              <span class="tag">ERP viticole</span>
+              <span class="tag">Dir. commerciale</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Proof of Value IA en 4 semaines</h3>
+            <p>
+              Ingestion d'un jeu de données historique, entraînement d'un modèle de
+              machine learning (maintenance prédictive, prévision de ventes) et
+              restitution des prédictions dans Power BI.
+            </p>
+            <div class="tag-row">
+              <span class="tag">4 semaines</span>
+              <span class="tag">Dataiku + Fabric</span>
+              <span class="tag">Maintenance / Supply</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Programme de montée en compétence</h3>
+            <p>
+              Programme hybride (2 jours présentiel + 4 demi-journées coaching à distance)
+              sur la modélisation, Copilot et le reporting en libre-service pour
+              les équipes métiers.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Formation</span>
+              <span class="tag">OPCO</span>
+              <span class="tag">Métiers & DAF</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker">Positionnement</div>
+            <h2 class="section-title">Un partenaire ancré en Nouvelle-Aquitaine</h2>
+          </div>
+        </div>
+        <div class="card">
+          <p>
+            Noah Consultant est un cabinet indépendant spécialisé en Data Analytics & IA,
+            avec une expertise pointue sur Microsoft Fabric, Power BI et Dataiku, et une
+            connaissance intime des métiers du terroir (viticulture, agroalimentaire,
+            industrie régionale).
+          </p>
+          <p>
+            Ce positionnement permet d'adresser les PME/ETI régionales avec des offres
+            pragmatiques, centrées sur le ROI, sans la lourdeur organisationnelle ni
+            les coûts des grandes ESN.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="cta">
+          <div class="cta-title">
+            Téléchargez le rapport complet ou planifiez un Audit Flash Data & IA
+          </div>
+          <p>
+            Un rapport de plus de 3&nbsp;000 mots détaille l'adoption de Microsoft Fabric & Power BI
+            dans les PME/ETI françaises, les tendances 2026 et les opportunités spécifiques
+            pour la filière viticole et agroalimentaire en Nouvelle-Aquitaine.
+          </p>
+          <div class="cta-actions">
+            <a href="rapport_fabric_pme_2026.pdf" class="btn btn-primary">
+              Télécharger le rapport complet
+            </a>
+            <a href="mailto:contact@noah-consultant.com?subject=Audit%20Flash%20Data%20%26%20IA%20-%20Fabric%20PME%2FETI" class="btn btn-ghost">
+              Planifier un Audit Flash Data & IA
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="footer-meta">
+          <span>© 2026 Noah Consultant</span>
+          <span>Microsoft Fabric • Power BI • Dataiku • Nouvelle-Aquitaine</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
